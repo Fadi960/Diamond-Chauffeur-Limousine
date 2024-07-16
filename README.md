@@ -110,6 +110,7 @@ Diamond Chauffeur Limousine Free uses several open-source technologies and frame
   - View details of customer reservations, including booking dates, customer information, and service details.
 
 ### For Customers:
+- **Login**: Login in account and access features.
 - **View Services**: Browse and select limousine services based on specific requirements and preferences.
 - **Make Bookings**: Reserve services for desired dates, times, and locations.
 - **Feedback and Support**:  Submit inquiries or request additional assistance.
