@@ -160,7 +160,7 @@ During the development of Diamond Chauffeur Limousine, the following resources a
 - [Geeks for Geeks](https://www.geeksforgeeks.org/)
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Node.js Documentation](https://nodejs.org/en/docs/)
-- [postgreSQL Documentation]([https://docs.mongodb.com/](https://www.postgresql.org/docs/))
+- [postgreSQL Documentation](https://www.postgresql.org/docs/)
 - [NPM Documentation](https://docs.npmjs.com/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
 
