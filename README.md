@@ -38,7 +38,7 @@ The methods and functions are connected with all the necessary routes.
 I have used Prettier, an opinionated code formatter that enforces a consistent style by parsing the code and re-printing it with its own rules, taking the maximum line length 
 into account and wrapping code when necessary.
 
-Our naming convention involves using names that uniquely identify the variable and method, following the Camel Case naming convention.
+My naming convention involves using names that uniquely identify the variable and method, following the Camel Case naming convention.
 
 ## ScreenShots
 
