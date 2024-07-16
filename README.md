@@ -29,9 +29,12 @@ superior and luxurious transportation services that cater to the unique needs of
 
 ## Code Style
 I am developing this project using the Model-View-Controller (MVC) architectural pattern. This involves dividing the code into three main components:
-Model: The database schemas, which define the structure of the data.
-View: The frontend pages and components where all the frontend rendering occurs.
-Controller: The methods and functions connected with all the necessary routes.
+### Model: 
+The database schemas, define the structure of the data.
+### View: 
+The frontend pages and components where all the frontend rendering occurs.
+### Controller: 
+The methods and functions are connected with all the necessary routes.
 I have used Prettier, an opinionated code formatter that enforces a consistent style by parsing the code and re-printing it with its own rules, taking the maximum line length 
 into account and wrapping code when necessary.
 
@@ -67,7 +70,6 @@ Our naming convention involves using names that uniquely identify the variable a
 | Admin Page (7)            | [Admin Page (7)](https://www.dropbox.com/scl/fi/llhramvtxrcsxqnj19m19/admin-page-7.PNG?rlkey=s4amxg979457d8l8zt3c676x3&st=mqbey7n1&dl=0)|
 | Admin Page (8)            | [Admin Page (8)](https://www.dropbox.com/scl/fi/e9vtik82scz7is51h6jrh/admin-page-8.PNG?rlkey=2au6lxstclrwfrv0hr307ag20&st=mch8e2ug&dl=0)|
 | Admin Profile             | [Admin Profile](https://www.dropbox.com/scl/fi/8yw1p4xffvqtpfwo6vqih/admin-profile-page-1.PNG?rlkey=n7g0xdn39eeu58cuig2dul06m&st=q1rdbssm&dl=0)|
-| Admin Page (6)            | [Admin Page (6)](https://www.dropbox.com/scl/fi/aqxmzlyn418i6qng048ot/admin-page-6.PNG?rlkey=4hpthzh2vphlly24yg4jq155e&st=htzizrdw&dl=0)|
 
 ## Open Source Technologies and Frameworks
 
