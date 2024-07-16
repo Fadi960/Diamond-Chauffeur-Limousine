@@ -29,16 +29,12 @@ superior and luxurious transportation services that cater to the unique needs of
 
 ## Code Style
 I am developing this project using the Model-View-Controller (MVC) architectural pattern. This involves dividing the code into three main components:
-### Model: 
-The database schemas, define the structure of the data.
-### View: 
-The frontend pages and components where all the frontend rendering occurs.
-### Controller: 
-The methods and functions are connected with all the necessary routes.
-I have used Prettier, an opinionated code formatter that enforces a consistent style by parsing the code and re-printing it with its own rules, taking the maximum line length 
+- Model: The database schemas, define the structure of the data.
+- View: The frontend pages and components where all the frontend rendering occurs.
+- Controller: The methods and functions are connected with all the necessary routes.
+-I have used Prettier, an opinionated code formatter that enforces a consistent style by parsing the code and re-printing it with its own rules, taking the maximum line length 
 into account and wrapping code when necessary.
-
-My naming convention involves using names that uniquely identify the variable and method, following the Camel Case naming convention.
+-My naming convention involves using names that uniquely identify the variable and method, following the Camel Case naming convention.
 
 ## ScreenShots
 
