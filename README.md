@@ -23,10 +23,9 @@ superior and luxurious transportation services that cater to the unique needs of
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/)
 
 ## Motivation
-To master the use of the PERN stack.
-Learn how to work and collaborate within a team on GitHub.
-To learn how to develop software by following a specified set of requirements.
-To develop a full website.
+- To master the use of the PERN stack.
+- To learn how to develop software by following a specified set of requirements.
+- To develop a full website.
 
 ## Code Style
 I am developing this project using the Model-View-Controller (MVC) architectural pattern. This involves dividing the code into three main components:
@@ -42,7 +41,7 @@ Our naming convention involves using names that uniquely identify the variable a
 
 | Page Name                 | Screenshot                                                                                                                            |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Home Page(1)              | [Home Page(1)]((https://www.dropbox.com/scl/fi/nfyfgdmnwy5m2m95jgp3s/home-page-1.PNG?rlkey=tzxozukrhz6chgela0toaylr9&st=4jilja3h&dl=0)|
+| Home Page(1)              | [Home Page(1)](https://www.dropbox.com/scl/fi/nfyfgdmnwy5m2m95jgp3s/home-page-1.PNG?rlkey=tzxozukrhz6chgela0toaylr9&st=4jilja3h&dl=0)|
 | Home Page(2)              | [Home Page(2)](https://www.dropbox.com/scl/fi/vvivb0g2pn3n8cupeb864/home-page-2.PNG?rlkey=jqge7ay0bh8jjve0f0j9f1n1h&st=8sd0iso0&dl=0) |
 | Home Page(3)              | [Home Page(3)](https://www.dropbox.com/scl/fi/zsdo3szkm0iq6ide7uhnk/home-page-3.PNG?rlkey=ivgz803bi5a3fuqqcnu4gw44j&st=qk8bmdie&dl=0) |
 | Home Page(4)              | [Home Page(4)](https://www.dropbox.com/scl/fi/h10d1vye9m1tfj43abyl7/home-page-4.PNG?rlkey=csvakse4gqathiqyhm1ehc1v0&st=o2u38752&dl=0) |
