@@ -103,7 +103,7 @@ Diamond Chauffeur Limousine Free uses several open-source technologies and frame
 - **Manage Bookings**:
   - View and manage bookings made by customers, reserve cars, and update status.
 - **Manage Cars**:
-  - Add, edit, and delete cars available for chauffeur and limousine services.
+  - Add, edit, and delete cars available for limousine services.
  - **View Car Details**:
   - Access detailed information about each car, including model, availability, and specifications.
 - **View Reservation Details**:
