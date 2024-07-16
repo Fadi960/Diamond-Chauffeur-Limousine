@@ -153,7 +153,7 @@ Contributions are welcome! If you'd like to contribute to Diamond Chauffeur Limo
 ## Credits
 During the development of Diamond Chauffeur Limousine, the following resources and websites were invaluable for debugging and finding solutions:
 
-- [Chai and Code YouTube Channel](https://www.youtube.com/c/ChaiAndCode)
+- [Chai aur Code YouTube Channel](https://www.youtube.com/c/ChaiaurCode)
 - [Code with Harry YouTube Channel](https://www.youtube.com/c/CodeWithHarry)
 - [Apna College YouTube Channel](https://www.youtube.com/c/ApnaCollege)
 - [Stack Overflow](https://stackoverflow.com/)
