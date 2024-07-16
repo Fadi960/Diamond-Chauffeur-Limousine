@@ -1,7 +1,7 @@
 # Diamond Chauffeur Limousine
 
 Diamond Chauffeur Limousine offers premium car rental services, ensuring luxury and comfort for all your travel needs, built with PERN(PostgreSQL, Express, React, and Node) stack built to provide 
-superior and luxurious transportation services that cater to the unique needs of every client.
+superior and luxurious rental services that cater to the unique needs of every client.
 
 ## Technologies Used
 
