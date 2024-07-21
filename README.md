@@ -1,1 +1,1 @@
-# Check Master Branch For Project
+# Check Master Branch For Project Details
