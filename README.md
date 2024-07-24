@@ -15,6 +15,9 @@ superior and luxurious rental services that cater to the unique needs of every c
 [![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)](https://axios-http.com/)
 [![Formik](https://img.shields.io/badge/Formik-FFCD3D?style=flat-square&logo=formik&logoColor=white)](https://formik.org/)
 [![Joi](https://img.shields.io/badge/Joi-76D04B?style=flat-square&logo=joi&logoColor=white)](https://joi.dev/)
+[![Bcryptjs](https://img.shields.io/badge/Bcryptjs-000000?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/bcryptjs)
+[![JSON Web Token](https://img.shields.io/badge/JSON_Web_Token-000000?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/jsonwebtoken)
+
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
@@ -90,7 +93,7 @@ Diamond Chauffeur Limousine Free uses several open-source technologies and frame
 - **UUID**: Library for generating unique identifiers
 - **PostgreSQL**: Open source relational database system
 - **Sequelize**: Promise-based Node.js ORM for PostgreSQL
-- **JWT**: JWT (JSON Web Token) is used to securely transmit information between parties as a JSON object, often for authentication and authorization
+- **JWT**: JWT (JSON Web Token) is used to securely transmit information between parties as a JSON object, for authentication and authorization
 - **Bcrypt**: Bcryptjs is used to hash passwords securely and manage password verification in the project
 - **CORS**: CORS manages cross-origin requests by specifying which domains are permitted to access resources on the server
 - **pg**: pg is used to interact with PostgreSQL databases, allowing for querying and managing data within your project
