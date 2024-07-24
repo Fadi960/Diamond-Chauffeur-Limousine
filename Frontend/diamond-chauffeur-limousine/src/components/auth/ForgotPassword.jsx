@@ -2,36 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import backgroundImage from '../../images/slide-2.jpg';
+import axios from 'axios';
 
-const ForgotPassword = () => {
+const ForgotPassword = ({ }) => {
     const [submitted, setSubmitted] = useState(false); // State to track if form has been submitted
     const [error, setError] = useState(''); // State to store error messages
 
     // Formik initial values
     const initialValues = {
         email: '',
-        newPassword: '',
+        password: '',
         confirmPassword: '',
     };
 
     // Form validation schema using Yup
     const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').required('Email is required'),
-        newPassword: Yup.string()
+        password: Yup.string()
             .required('New Password is required')
             .min(8, 'Password must be at least 8 characters long'),
         confirmPassword: Yup.string()
-            .oneOf([Yup.ref('newPassword'), null], 'Passwords must match')
+            .oneOf([Yup.ref('password'), null], 'Passwords must match')
             .required('Confirm Password is required'),
     });
 
     // Handle form submission
     const handleSubmit = async (values, { setSubmitting }) => {
-        const { email, newPassword } = values;
+        const { email, password } = values;
 
         try {
-            // Simulated delay for 1.5 seconds (simulating API call)
-            await new Promise(resolve => setTimeout(resolve, 1500));
+            // API call to reset password
+            const response = await axios.patch('http://localhost:3000/auth/resetPassword', { email, password});
+            console.log('Password reset successful:', response.data);
 
             // Simulate success
             setSubmitted(true);
@@ -96,17 +98,17 @@ const ForgotPassword = () => {
                                         <ErrorMessage name="email" component="div" className="text-red-500 text-xs mt-1" />
                                     </div>
                                     <div className="mb-4">
-                                        <label htmlFor="newPassword" className="block text-gray-700 text-sm font-bold mb-2">
+                                        <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">
                                             New Password
                                         </label>
                                         <Field
                                             type="password"
-                                            id="newPassword"
-                                            name="newPassword"
+                                            id="password"
+                                            name="password"
                                             placeholder="New Password"
                                             className="appearance-none bg-transparent border border-gray-300 w-full text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:border-yellow-600"
                                         />
-                                        <ErrorMessage name="newPassword" component="div" className="text-red-500 text-xs mt-1" />
+                                        <ErrorMessage name="password" component="div" className="text-red-500 text-xs mt-1" />
                                     </div>
                                     <div className="mb-6">
                                         <label htmlFor="confirmPassword" className="block text-gray-700 text-sm font-bold mb-2">

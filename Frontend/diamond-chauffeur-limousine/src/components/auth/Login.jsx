@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { Link } from 'react-router-dom';
 import { FaLock, FaEnvelope } from "react-icons/fa";
 import loginImage from "../../images/slide-1.jpg";
+import axios from 'axios';
 
 /**
  * Login component for user validation.
@@ -22,13 +23,18 @@ const Login = ({ onForgotPasswordClick, onSignupClick }) => {
         password: Yup.string().required('Password is required').min(8, 'Password must be at least 8 characters long'),
     });
 
-    const handleLoginFormSubmit = (values, { setSubmitting }) => {
-        console.log(values);
-
-        setTimeout(() => {
-            setSubmitting(false);
-            window.location.href = '/';
-        }, 1000);
+    const handleLoginFormSubmit = (values, { setSubmitting, setErrors }) => {
+        axios.post('http://localhost:3000/auth/login', values)
+            .then(response => {
+                console.log('Login successful:', response.data);
+                // Redirect or perform any other action on successful login
+                window.location.href = '/';
+            })
+            .catch(error => {
+                console.error('Login error:', error);
+                setErrors({ email: 'Invalid login credentials' });
+                setSubmitting(false);
+            });
     };
 
     return (

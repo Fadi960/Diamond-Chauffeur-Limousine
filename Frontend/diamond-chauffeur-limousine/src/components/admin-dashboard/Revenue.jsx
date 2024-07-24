@@ -20,7 +20,7 @@ const Revenue = () => {
   ]);
 
   useEffect(() => {
-    // You can fetch data from your API or backend here
+
     // setData(fetchedData);
   }, []);
 
