@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Diamond Chauffeur Limousine
 
 Diamond Chauffeur Limousine offers premium car rental services, ensuring luxury and comfort for all your travel needs, built with PERN(PostgreSQL, Express, React, and Node) stack built to provide 
@@ -91,7 +90,12 @@ Diamond Chauffeur Limousine Free uses several open-source technologies and frame
 - **UUID**: Library for generating unique identifiers
 - **PostgreSQL**: Open source relational database system
 - **Sequelize**: Promise-based Node.js ORM for PostgreSQL
-
+- **JWT**: JWT (JSON Web Token) is used to securely transmit information between parties as a JSON object, often for authentication and authorization
+- **Bcrypt**: Bcryptjs is used to hash passwords securely and manage password verification in the project
+- **CORS**: CORS manages cross-origin requests by specifying which domains are permitted to access resources on the server
+- **pg**: pg is used to interact with PostgreSQL databases, allowing for querying and managing data within your project
+- **Recharts**: Recharts are used for creating composable and customizable charts and graphs in the project.
+  
 ## Features
 
 ### For Guests:
@@ -174,6 +178,3 @@ These resources provided valuable insights and solutions that helped overcome va
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-=======
-# Check Master Branch For Project Details
->>>>>>> 79642dafb53ad5d5ca44ffd81441a10e2739809e
