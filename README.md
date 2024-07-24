@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Diamond Chauffeur Limousine
 
 Diamond Chauffeur Limousine offers premium car rental services, ensuring luxury and comfort for all your travel needs, built with PERN(PostgreSQL, Express, React, and Node) stack built to provide 
@@ -173,3 +174,6 @@ These resources provided valuable insights and solutions that helped overcome va
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+=======
+# Check Master Branch For Project Details
+>>>>>>> 79642dafb53ad5d5ca44ffd81441a10e2739809e
