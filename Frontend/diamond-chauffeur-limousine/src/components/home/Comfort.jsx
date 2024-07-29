@@ -8,12 +8,12 @@ const Comfort = () => {
         <div className="flex flex-col items-center justify-center">
           {/* Section description */}
           <p className="text-xl text-gray-600 mb-8 text-center">
-            We value the time and quality of travel for <br /> each of our clients.
+            We value the time and quality of travel for each of our clients.
           </p>
           {/* Main heading */}
-          <h1 className="text-7xl font-bold text-yellow-600 mb-4 text-center">Incredible</h1>
+          <h1 className=" text-5xl sm:text-8xl font-bold text-yellow-500 mb-4 text-center">Incredible</h1>
           {/* Subheading */}
-          <h2 className="text-5xl font-bold text-gray-800 mb-4 text-center">Comfort</h2>
+          <h2 className=" text-4xl sm:text-6xl font-bold text-gray-800 mb-4 text-center">Comfort</h2>
           {/* Image */}
           <div className="w-full">
             <img

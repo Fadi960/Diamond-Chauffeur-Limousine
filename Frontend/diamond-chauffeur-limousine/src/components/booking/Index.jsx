@@ -4,10 +4,10 @@ import Header from '../client-layout/Header';
 import BookingForm from './BookingForm';
 import Footer from '../client-layout/Footer';
 
-const Index = () => {
+const Index = ({activeLink, setActiveLink}) => {
     return (
         <div className="booking-container">
-    <Header/>
+    <Header activeLink={activeLink} setActiveLink={setActiveLink} />
     <BookingForm />
     <Footer />
     </div>
