@@ -14,10 +14,12 @@ import Reservation from './components/admin-sidebar3/Index';
 import ReservationDetail from './components/admin-sidebar4/Index';
 import NotFound from './NotFound';
 import Car from './pages/Car';
-import Profile from './pages/Profile'
+import Profile from './pages/Profile';
+import { useState } from 'react';
 
 
 const App = () => {
+  const [activeLink, setActiveLink] = useState('home')
   return (
     <>
     <Router>
@@ -25,13 +27,13 @@ const App = () => {
         
         <div className="flex-grow-0">
           <Routes>
-            <Route path="*" element={<NotFound />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/faq" element={<Faq />} />
-            <Route path="/booking" element={<Booking />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contacts" element={<Contact />} />
-            <Route path="/auth" element={<Auth />} />
+            <Route path="*" element={<NotFound activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/" element={<Home  activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/faq" element={<Faq activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/booking" element={<Booking activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/blog" element={<Blog activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/contacts" element={<Contact activeLink={activeLink} setActiveLink={setActiveLink} />} />
+            <Route path="/auth" element={<Auth  />} />
             <Route path="/admin/*" element={<AdminIndex />} />
             <Route path="/car-list" element={<AdminSidebar />} />
             <Route path="/car-details" element={<CarList />} />

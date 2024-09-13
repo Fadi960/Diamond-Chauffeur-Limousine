@@ -9,10 +9,10 @@ import Partner from './Partner';
 import Header from '../client-layout/Header';
 import Footer from "../client-layout/Footer";
 
-const Index = () => {
+const Index = ({activeLink, setActiveLink}) => {
   return (
     <div className="home-container"> 
-        <Header />
+        <Header activeLink={activeLink} setActiveLink={setActiveLink} />
         <Carousel />
         <Hero />
         <CardsSection />

@@ -8,6 +8,7 @@ var cors = require('cors');
 var userRouter = require("./routes/userRouter");
 var carRouter = require("./routes/carRouter");
 var bookingRouter = require("./routes/bookingRouter");
+var authRouter = require("./routes/authRouter");
 
 
 
@@ -30,6 +31,7 @@ app.use(cors({
 app.use("/user", userRouter);
 app.use("/car", carRouter);
 app.use("/booking", bookingRouter);
+app.use("/auth", authRouter);
 
 
 

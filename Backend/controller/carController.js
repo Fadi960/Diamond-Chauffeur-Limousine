@@ -27,13 +27,13 @@ const updateCarSchema = joi.object().keys({
     fuelType: joi.string().valid('petrol', 'diesel', 'electric', 'hybrid').optional(),
 });
 
-module.exports ={
+module.exports = {
     createCar: async (req, res) => {
-        try{
+        try {
             const validate = await createCarSchema.validateAsync(req.body);
             const car = await carService.createCar(validate);
 
-            if(car.error){
+            if (car.error) {
                 return res.send({
                     error: car.error,
                 });
@@ -41,57 +41,57 @@ module.exports ={
             return res.send({
                 response: car.response,
             });
-        }catch(error){
-            console.log("error from controller",error);
+        } catch (error) {
+            console.log("error from controller", error);
             return res.send({
                 error: error,
             });
         }
     },
 
-    getAllCar: async(req,res)=>{
-        try{
+    getAllCar: async (req, res) => {
+        try {
             const car = await carService.getAllCar();
-            if(car.error){
+            if (car.error) {
                 return res.send({
                     error: car.error,
                 });
+            }
+            return res.send({
+                response: car.response,
+            });
+        } catch (error) {
+            return res.send({
+                error: error,
+            });
         }
-        return res.send({
-            response: car.response,
-        });
-    }catch (error) {
-        return res.send({
-        error: error,
-        });
-    }
-},
-deleteCar: async (req, res) => {
-    try {
-        const validate = await deleteCarSchema.validateAsync(req.query);
-        const deleteCar = await carService.deleteCar(validate.carId);
+    },
+    deleteCar: async (req, res) => {
+        try {
+            const validate = await deleteCarSchema.validateAsync(req.query);
+            const deleteCar = await carService.deleteCar(validate.carId);
 
-        if (deleteCar.error) {
-            return res.send({ error: deleteCar.error });
+            if (deleteCar.error) {
+                return res.send({ error: deleteCar.error });
+            }
+            return res.send({ response: deleteCar.response });
+        } catch (error) {
+            console.log("error from controller", error);
+            return res.send({ error: error, });
         }
-        return res.send({ response: deleteCar.response });
-    } catch (error) {
-        console.log("error from controller",error);
-        return res.send({ error: error, });
-    }
-},
-  updateCar: async (req,res) => {
-    try{
-        const validate = await updateCarSchema.validateAsync(req.body);
-        const updateCar = await carService.updateCar(validate);
-        if (updateCar.error) {
-            return res.send({ error: updateCar.error });
+    },
+    updateCar: async (req, res) => {
+        try {
+            const validate = await updateCarSchema.validateAsync(req.body);
+            const updateCar = await carService.updateCar(validate);
+            if (updateCar.error) {
+                return res.send({ error: updateCar.error });
+            }
+            console.log("Console log from update car", updateCar.response);
+            return res.send({ response: updateCar.response });
+        } catch (error) {
+            console.log("error from controller", error);
+            return res.send({ error: error, });
         }
-        console.log("Console log from update car",updateCar.response);
-        return res.send({ response: updateCar.response });
-    } catch (error) {
-        console.log("error from controller",error);
-        return res.send({ error: error, });
     }
-    }
-  };
+};

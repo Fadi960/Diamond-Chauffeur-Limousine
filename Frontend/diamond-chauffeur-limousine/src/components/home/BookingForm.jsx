@@ -11,7 +11,7 @@ const BookingForm = () => {
   const [orderTime, setOrderTime] = useState("");
   const [gearType, setGearType] = useState("");
   const [passengers, setPassengers] = useState("");
-  const [brand, setBrand] = useState(""); // Changed from carName to brand
+  const [brand, setBrand] = useState(""); 
   const [carType, setCarType] = useState("");
 
   // Function to handle form submission
@@ -65,12 +65,12 @@ const BookingForm = () => {
             {/* App Download Links */}
             <div className="flex flex-col items-center md:flex-row md:items-center md:justify-start">
               <a href="#" className="mr-4 mb-2 md:mb-0">
-                <img src={app} alt="App Store" className="h-12" />
+                <img src={app} alt="App Store" className="h-12 sm:h-14" />
               </a>
               <a href="#" className="mr-4">
-                <img src={google} alt="Google Play" className="h-12" />
+                <img src={google} alt="Google Play" className="h-12 sm:h-14 " />
               </a>
-              <span className="text-lg text-center md:text-left">Download our Application to track your order</span>
+              <span className="pt-4 text-lg text-center md:text-left">Download our Application to track your order</span>
             </div>
           </div>
         </div>

@@ -12,10 +12,10 @@ import Footer from '../client-layout/Footer';
 
 
 
-const Index = () => {
+const Index = ({activeLink, setActiveLink}) => {
     return (
         <div className="blog-container">
-    <Header/>
+    <Header activeLink={activeLink} setActiveLink={setActiveLink} />
     <Blog1 />
     <Blog2 />
     <Blog3 />
