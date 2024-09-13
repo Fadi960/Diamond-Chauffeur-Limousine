@@ -184,7 +184,7 @@ const Car = () => {
               <li key={number}>
                 <button
                   onClick={() => paginate(number)}
-                  className={`px-3 py-2 border border-gray-300 bg-white text-gray-500 ${
+                  className={`px-3 py-4 border border-gray-300 bg-white text-gray-500 ${
                     currentPage === number ? 'bg-blue-500 text-white' : ''
                   }`}
                 >
